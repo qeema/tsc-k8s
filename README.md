@@ -1,2 +1,6 @@
-# tsc-k8s
-- https://www.tam-tam.co.jp/tipsnote/javascript/post17695.html
+
+## docker memo
+```
+docker build -t [tag]:1.0 .
+docker run --rm [tag]:1.0
+```
