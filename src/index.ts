@@ -1,6 +1,10 @@
-import { Main } from './main';
+import axios from 'axios';
 
-const main = new Main('https://www.cman.jp/network/support/go_access.cgi');
 void (async () => {
-  await main.exec();
+  const res = await axios({
+    method: 'get',
+    url: 'https://us-central1-test-acb17.cloudfunctions.net/helloWorld',
+  });
+
+  console.log(res.data);
 })();

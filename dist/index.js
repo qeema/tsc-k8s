@@ -1,10 +1,13 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const main_1 = require("./main");
-const main = new main_1.Main('https://www.cman.jp/network/support/go_access.cgi');
-console.log('1');
+const axios_1 = __importDefault(require("axios"));
 void (async () => {
-    console.log('2');
-    await main.exec();
-    console.log('3');
+    const res = await axios_1.default({
+        method: 'get',
+        url: 'https://us-central1-test-acb17.cloudfunctions.net/helloWorld',
+    });
+    console.log(res.data);
 })();
