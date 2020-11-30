@@ -1,0 +1,38 @@
+{
+  "name": "tsc-k8s",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "watch": "tsc -w",
+    "exec": "tsc && node ./dist/index.js",
+    "lint": "eslint . --ext ts --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qeema/tsc-k8s.git"
+  },
+  "author": "qeema <qeemakaree@gmail.com> (http://github.com/qeema)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qeema/tsc-k8s/issues"
+  },
+  "homepage": "https://github.com/qeema/tsc-k8s#readme",
+  "dependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/cheerio": "^0.22.22",
+    "axios": "^0.21.0",
+    "cheerio": "^1.0.0-rc.3",
+    "typescript": "^4.1.2"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.8.2",
+    "@typescript-eslint/parser": "^4.8.2",
+    "eslint": "^7.14.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.2.1"
+  }
+}
